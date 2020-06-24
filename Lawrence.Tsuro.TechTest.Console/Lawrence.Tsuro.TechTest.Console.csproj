@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="CsvProcessor\**" />
+	  <EmbeddedResource Remove="CsvProcessor\**" />
+	  <None Remove="CsvProcessor\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="JsonFileReader.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="9.0.0" />
+		<PackageReference Include="ConsoleTables" Version="2.4.1" />
+		<PackageReference Include="CsvHelper" Version="2.16.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Towwards.Recruitment.Service\Lawrence.Tsuro.TechTest.Services.csproj" />
+	</ItemGroup>
+</Project>
