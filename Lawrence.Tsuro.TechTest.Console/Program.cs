@@ -15,18 +15,18 @@ namespace Lawrence.Tsuro.TechTest.Console
                     System.Console.WindowWidth     = System.Console.LargestWindowWidth;
                     System.Console.WindowHeight    = System.Console.LargestWindowHeight;
                     System.Console.ForegroundColor = ConsoleColor.Blue;
-                    System.Console.WriteLine("Demo technical test");
+                    System.Console.WriteLine("Demo technical test: Make that you read the readme.md");
                     System.Console.ForegroundColor = ConsoleColor.Green;
                     System.Console.WriteLine("Select from the following options");
                     System.Console.WriteLine("...........................................................");
                     System.Console
-                          .WriteLine("1: Process cvs file and save it to a local database that you possible and initially migrated. Console will mirror the database table");
+                          .WriteLine("1: Export data from cvs file and save it to a local database initially migrated. Console will mirror the database table");
                     System.Console
-                          .WriteLine("2: Process database records and  convert to a json with payload on console");
+                          .WriteLine("2: Export database records to json with payload on console");
                     System.Console
-                          .WriteLine("3: Process and export csv records directly - and convert to a json with payload to /consoledata/export-addresses.json");
+                          .WriteLine("3: Export data from import csv to json with payload saved on /consoledata/export-addresses.json");
                     System.Console
-                          .WriteLine("4: Process and export json records directly - and convert to a csv result set to /consoledata/export-addresses.json");
+                          .WriteLine("4: Export data from import json to csv with payload saved on  /consoledata/export-addresses.csv");
 
                     System.Console.ForegroundColor = ConsoleColor.White;
                     var userInput = System.Console.ReadLine();
@@ -54,14 +54,12 @@ namespace Lawrence.Tsuro.TechTest.Console
                                 break;
 
                             default:
-                                System.Console.WriteLine("Enter values between 1-4 from the options above");
-                                System.Console.ReadKey();
-                                break;
+                                throw new Exception("Enter values between 1-4 from the options above");
                         }
                     }
                     else
                     {
-                        System.Console.WriteLine("Invalid user input.Enter values between 1-4 from the options above");
+                        throw new Exception("Invalid user input.Enter values between 1-4 from the options above");
                     }
                 }
                 catch (Exception e)

@@ -45,7 +45,7 @@ namespace Lawrence.Tsuro.TechTest.Console
 
         protected static void ProcessCvsAndSaveToDbAndConsoleDisplayResults(IAddressService addressService)
         {
-            System.Console.WriteLine("Twiggle your fingures whilst this is working at the back...");
+            System.Console.WriteLine("Twiddle your fingers whilst this is working at the back...");
 
             var csvRecords = CsvFileReader.Read(CsvFilePathImport);
 
