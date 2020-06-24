@@ -3,23 +3,25 @@ Poc demo console app to convert csv data and save it in the database, convert da
 console directly, and finally the option to convert between json to csv vice-versa
 
 
-Solution Lawrence.Tsuro.TechTest .netcore 3.1
-                 ---------------> Lawrence.Tsuro.TechTest.Entities 
-                 ---------------> Lawrence.Tsuro.TechTest.Console 
-                 ---------------> Lawrence.Tsuro.TechTest.Services 
-                 ---------------> Lawrence.Tsuro.TechTest.Repository 
-                 ---------------> Lawrence.Tsuro.TechTest.ServicesTest
+Solution .netcore 3.1
+Lawrence.Tsuro.TechTest 
+
+Projects / Libraries 
+Lawrence.Tsuro.TechTest.Entities 
+Lawrence.Tsuro.TechTest.Console
+Lawrence.Tsuro.TechTest.Services 
+Lawrence.Tsuro.TechTest.Repository 
+Lawrence.Tsuro.TechTest.ServicesTest
                  
 Database - Code First EF
 Local SQL data base instance Lawrence.Tsuro.TechTest
 
 File Paths
 The csv file was downloaded randomly from the internet  and whose 500 records are used generate export files
-../../../consoledata/import-addresses.csv
-../../../consoledata/import-addresses.json
-../../../consoledata/export-addresses.json
-../../../consoledata/export-addresses.csv
-
+1. ../../../consoledata/import-addresses.csv
+2. ../../../consoledata/import-addresses.json
+3. ../../../consoledata/export-addresses.json
+4. ../../../consoledata/export-addresses.csv
 
 Libraries
 1. Console Tables for displaying data as a table on console.
