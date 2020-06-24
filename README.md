@@ -7,14 +7,14 @@ Solution .netcore 3.1
 Lawrence.Tsuro.TechTest 
 
 Projects / Libraries 
-Lawrence.Tsuro.TechTest.Entities 
-Lawrence.Tsuro.TechTest.Console
-Lawrence.Tsuro.TechTest.Services 
-Lawrence.Tsuro.TechTest.Repository 
-Lawrence.Tsuro.TechTest.ServicesTest
+1. Lawrence.Tsuro.TechTest.Entities 
+2. Lawrence.Tsuro.TechTest.Console
+3. Lawrence.Tsuro.TechTest.Services 
+4. Lawrence.Tsuro.TechTest.Repository 
+5. Lawrence.Tsuro.TechTest.ServicesTest
                  
 Database - Code First EF
-Local SQL data base instance Lawrence.Tsuro.TechTest
+1. Local SQL data base instance Lawrence.Tsuro.TechTest
 
 File Paths
 The csv file was downloaded randomly from the internet  and whose 500 records are used generate export files
@@ -50,4 +50,4 @@ Future Enhacements
 Problems / Lessons Learned
 1. Csv helper complains on a ignored property, that is why I created a base dto and inherited from it to try and reduce the syntax.
    Due to time constraints, I settled for a work around that allows the csv to be read and then passed into a custom model validator for sanitisation.
- 2. Should  have probably refactored some of the code and moved constants to appsettings.
+2. Should  have probably refactored some of the code and moved constants to appsettings.
